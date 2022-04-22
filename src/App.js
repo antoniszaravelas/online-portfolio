@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -21,8 +22,8 @@ function App() {
 
   return (
     <>
-      <HashRouter basename={window.location.pathname || ""}>
-      {/* <Router> */}
+      {/* <HashRouter basename={window.location.pathname || ""}> */}
+      <Router>
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
             <button onClick={handleClick} className="nav-toggle" aria-label="toggle-navigation"><span className="hamburger" /></button>
@@ -43,12 +44,13 @@ function App() {
               <Route path="/online-portfolio" element={<Home/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/work" element={<Work/>}/>
+              <Route path="/contact" element={<Contact/>}/>
             </Routes>
           </div>
         </div>
         <Cursor/>
-    </HashRouter>
-    {/* </Router> */}
+    {/* </HashRouter> */}
+    </Router>
   </>
   );
 }

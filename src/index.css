@@ -1152,12 +1152,12 @@ button {
 
 
 .card img {
-    width:350px;
+    width: 350px;
     height: 200px;
     object-fit: cover;
     object-position: center top;
     border-radius: 10px;
-   
+
 }
 
 
@@ -1183,7 +1183,7 @@ button {
     border-radius: 10px;
     box-shadow: 3px 3px 9px 3px rgb(201, 199, 199);
     margin: 10px 10px;
-    max-width:400px;
+    max-width: 400px;
 }
 
 
@@ -1191,26 +1191,26 @@ button {
     font-size: 1.3rem;
     font-family: "Inconsolata", monospace;
     margin-bottom: 15px;
-    color:rgb(221, 217, 217);
+    color: rgb(221, 217, 217);
 }
 
 
-.card div:nth-child(2){
-    margin-bottom:15px;
+.card div:nth-child(2) {
+    margin-bottom: 15px;
 }
 
-.card div:last-child{
-    margin-bottom:10px;
+.card div:last-child {
+    margin-bottom: 10px;
 }
 
-.card_body a{
+.card_body a {
     display: inline-block;
     padding: 5px;
     font-size: 1rem;
     letter-spacing: 3px;
     border: 1px solid #e53be5;
     color: #f149f1;
-    border-radius:5px;
+    border-radius: 5px;
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
     background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #f89bf8)) right;
@@ -1220,22 +1220,22 @@ button {
     transition: .5s ease-out;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
-.card_body a:last-child{
-    margin-left:10px;
+.card_body a:last-child {
+    margin-left: 10px;
 }
 
 
-.card_body a:hover{
+.card_body a:hover {
     cursor: pointer;
     color: black;
     background-position: left;
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
     .card {
         display: flex;
         flex-direction: column;
@@ -1246,46 +1246,254 @@ button {
         border-radius: 10px;
         box-shadow: 3px 3px 9px 3px rgb(201, 199, 199);
         margin: 10px 10px;
-        width:100%;
-        height:auto;
+        width: 100%;
+        height: auto;
     }
 
     .card img {
-        width:200px;
+        width: 200px;
         height: 100px;
         object-fit: cover;
         object-position: center top;
         border-radius: 10px;
-       
+
     }
 
-    .card_body p{
-        font-size:15px;
+    .card_body p {
+        font-size: 15px;
         color: #531153;
     }
-    
+
 }
 
 
-@media only screen and (max-width:500px){
-    .cursor{
+@media only screen and (max-width:500px) {
+    .cursor {
         display: none !important;
     }
 
-    body{
-        cursor:unset !important;
+    body {
+        cursor: unset !important;
     }
 
-    html{
-        cursor:unset !important
+    html {
+        cursor: unset !important
     }
 
-    *:hover{
-        cursor:unset !important;
+    *:hover {
+        cursor: unset !important;
     }
 
     button:hover,
-    a:hover{
-        cursor:pointer !important;
+    a:hover {
+        cursor: pointer !important;
     }
+}
+
+
+
+/* contact */
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#contact {
+    background-color: #292828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    width: clamp(100px, 90%, 1000px);
+    margin: 80px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-links,
+.contact-form-wrapper {
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+}
+
+
+.contact-links {
+    background-color: #d891e3;
+    background:
+
+        radial-gradient(circle at 94% 72%, #d64ebb 0 10%, transparent 10.2%),
+        radial-gradient(circle at 20% max(78%, 350px), #ec96f7 0 7%, transparent 7.2%) #292828;
+    border-radius: 10px 0 0 10px;
+}
+
+.contact-form-wrapper {
+    background-color: #ffffff8f;
+    border-radius: 10px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contact-links,
+    .contact-form-wrapper {
+        width: 100%;
+    }
+
+    .contact-links {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .contact-form-wrapper {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contact-box {
+        width: 95%;
+        margin: 8% 5%;
+    }
+}
+
+h2 {
+    font-family: "Inconsolata", monospace;
+    color: #fff;
+    font-size: clamp(30px, 6vw, 60px);
+    letter-spacing: 2px;
+    text-align: center;
+    transform: scale(.95, 1);
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.link {
+    margin: 10px;
+    cursor: pointer;
+}
+
+#contact img {
+    width: 45px;
+    height: 45px;
+    filter:
+        hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
+    transition: 0.2s;
+    user-select: none;
+}
+
+#contact img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#contact img:active {
+    transform: scale(1.1, 1.1);
+    filter:
+        hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+}
+
+.form-item {
+    position: relative;
+}
+
+label,
+input,
+textarea {
+    font-family: "Inconsolata", monospace;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    color: #999;
+    font-size: clamp(14px, 1.5vw, 18px);
+    pointer-events: none;
+    user-select: none;
+}
+
+input,
+textarea {
+    width: 100%;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: clamp(15px, 1.5vw, 18px);
+}
+
+input:focus+label,
+input:valid+label,
+textarea:focus+label,
+textarea:valid+label {
+    font-size: clamp(13px, 1.3vw, 16px);
+    color: #777;
+    top: -20px;
+    transition: all .225s ease;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 6px 30px 6px 30px;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    border: 1px solid #f065f0;
+    border-radius: 10px;
+    color: #f449f4;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #f89bf8)) right;
+    background: linear-gradient(to left, transparent 50%, #f89bf8 50%) right;
+    background-size: 200%;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1, 1.1);
+    cursor: none;
+    color: black;
+    background-position: left;
+}
+
+.submit-btn:active {
+    transform: scale(1.1, 1.1);
+    filter: sepia(0.5);
+}
+
+@media only screen and (max-width: 800px) {
+    h2 {
+        font-size: clamp(40px, 10vw, 60px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2 {
+        font-size: clamp(30px, 12vw, 60px);
+    }
+
+    .links {
+        padding-top: 30px;
+    }
+
+    img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+
+.link a{
+    color:white;   
 }
