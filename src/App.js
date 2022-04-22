@@ -1,6 +1,6 @@
 import {useState} from "react";
 import Cursor from "./components/Cursor";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Link,HashRouter} from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <HashRouter basename={window.location.pathname || ""}>
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
             <button onClick={handleClick} className="nav-toggle" aria-label="toggle-navigation"><span className="hamburger" /></button>
@@ -47,7 +47,7 @@ function App() {
           </div>
         </div>
         <Cursor/>
-    </Router>
+    </HashRouter>
   </>
   );
 }

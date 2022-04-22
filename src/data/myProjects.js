@@ -2,7 +2,7 @@
 const myProjects = [
     {
         id: 1,
-        imgLink: '../images/FZIN.png',
+        imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/FZIN.png',
         projectName: 'Architecture Company  Website',
         infoText: 'An architecture-company website using REACT, Routes, Animations etc',
         technologiesUsed: 'REACT,JavaScript,SCSS',
@@ -12,7 +12,7 @@ const myProjects = [
     },
     {
         id: 2,
-        imgLink: '../images/techequipper.png',
+        imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/techequipper.png',
         projectName: 'MERN ECommerce',
         infoText: 'Ecommerce with shopping cart, admin product management, user profile with orders...',
         technologiesUsed: 'React, Node.js, Express, MongoDB, Mongoose',
@@ -22,7 +22,7 @@ const myProjects = [
     },
     {
         id: 3,
-        imgLink: '../images/easy-store.png',
+        imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/easy-store.png',
         projectName: 'Easy Store',
         infoText: 'A simulation of the known "Shopify',
         technologiesUsed: 'MERN',
@@ -32,7 +32,7 @@ const myProjects = [
     },
     {
         id: 4,
-        imgLink: '../images/skeleton.png',
+        imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/skeleton.png',
         projectName: 'Skeleton Screen',
         infoText: 'Tired of blank screens when fetching data? Skeleton Screen is the solution!',
         technologiesUsed: 'React, JS, CSS, SCSS',
@@ -42,7 +42,7 @@ const myProjects = [
     },  
     {
         id: 5,
-        imgLink: '../images/tictactoe.png',
+        imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/tictactoe.png',
         projectName: 'Tic Tac Toe',
         infoText: 'A simple tic tac toe game to play with your firends',
         technologiesUsed: 'HTML/CSS/JS',
