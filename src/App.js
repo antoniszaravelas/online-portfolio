@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <HashRouter basename={window.location.pathname || ""}>
       {/* <Router> */}
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
