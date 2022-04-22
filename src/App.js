@@ -21,6 +21,7 @@ function App() {
 
   return (
     <>
+      <HashRouter>
       {/* <Router> */}
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
@@ -37,17 +38,16 @@ function App() {
             </div>
             
             <Nav/>
-            <HashRouter basename={window.location.pathname || ""}>
-              <Routes>
-                <Route path="/online-portfolio" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/work" element={<Work/>}/>
-              </Routes>
-            </HashRouter>
+
+            <Routes>
+              <Route path="/online-portfolio" element={<Home/>}/>
+              <Route path="/about" element={<About/>}/>
+              <Route path="/work" element={<Work/>}/>
+            </Routes>
           </div>
         </div>
         <Cursor/>
-  
+    </HashRouter>
     {/* </Router> */}
   </>
   );
