@@ -1,6 +1,6 @@
 {
   "name": "online-portfolio-react",
-  "proxy": "http://127.0.0.1:3000",
+  "proxy": "https://antoniszaravelas.github.io/online-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
