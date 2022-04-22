@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/online-portfolio/static/css/main.7c290710.css",
+    "main.js": "/github.io/online-portfolio/static/js/main.fc6100f5.js",
+    "static/media/me2.png": "/github.io/online-portfolio/static/media/me2.c64de9f67533b6d56f83.png",
+    "static/media/me.jpg": "/github.io/online-portfolio/static/media/me.d929c0738b6b88124d20.jpg",
+    "static/media/CV_Zaravelas.pdf": "/github.io/online-portfolio/static/media/CV_Zaravelas.9c4a1fa2786c9698091f.pdf",
+    "index.html": "/github.io/online-portfolio/index.html",
+    "main.7c290710.css.map": "/github.io/online-portfolio/static/css/main.7c290710.css.map",
+    "main.fc6100f5.js.map": "/github.io/online-portfolio/static/js/main.fc6100f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c290710.css",
+    "static/js/main.fc6100f5.js"
+  ]
+}
