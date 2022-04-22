@@ -21,8 +21,8 @@ function App() {
 
   return (
     <>
-      {/* <HashRouter basename={window.location.pathname || ""}> */}
-      <Router>
+      <HashRouter basename={window.location.pathname || ""}>
+      {/* <Router> */}
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
             <button onClick={handleClick} className="nav-toggle" aria-label="toggle-navigation"><span className="hamburger" /></button>
@@ -44,14 +44,11 @@ function App() {
               <Route path="/about" element={<About/>}/>
               <Route path="/work" element={<Work/>}/>
             </Routes>
-            
-
-
           </div>
         </div>
         <Cursor/>
-    {/* </HashRouter> */}
-    </Router>
+    </HashRouter>
+    {/* </Router> */}
   </>
   );
 }

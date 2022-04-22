@@ -15,7 +15,7 @@ const myProjects = [
         imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/techequipper.png',
         projectName: 'MERN ECommerce',
         infoText: 'Ecommerce with shopping cart, admin product management, user profile with orders...',
-        technologiesUsed: 'React, Node.js, Express, MongoDB, Mongoose',
+        technologiesUsed: "MERN",
         gitHubLink: 'https://github.com/antoniszaravelas/techequipper',
         websiteLink: 'https://techequipper.herokuapp.com/',
         category: 'full-stack'
@@ -25,7 +25,7 @@ const myProjects = [
         imgLink: 'https://antoniszaravelas.github.io/online-portfolio/images/easy-store.png',
         projectName: 'Easy Store',
         infoText: 'A simulation of the known "Shopify',
-        technologiesUsed: 'MERN',
+        technologiesUsed: 'React, Express, MongoDB, NodeJS',
         gitHubLink: 'https://github.com/BensDevDe/easy-store-main',
         websiteLink: '#',
         category: 'full-stack'
