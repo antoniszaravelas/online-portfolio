@@ -32,12 +32,12 @@ const myProjects = [
     },
     {
         id: 4,
-        imgLink: 'https://raw.githubusercontent.com/midoritiba/goalsetter-mern-app/main/mockup_goalsetter.png',
+        imgLink: '../images/skeleton.png',
         projectName: 'Skeleton Screen',
         infoText: 'Tired of blank screens when fetching data? Skeleton Screen is the solution!',
         technologiesUsed: 'React, JS, CSS, SCSS',
         gitHubLink: 'https://github.com/antoniszaravelas/skeleton-screen',
-        websiteLink: 'http://mernapp-michelle.herokuapp.com/',
+        websiteLink: 'https://antoniszaravelas.github.io/skeleton-screen/',
         category: 'front-end'
     },  
     {
