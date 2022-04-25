@@ -8,21 +8,14 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 
 function App() {
-
+  
   const [boo,setBoo] = useState(false);
-
-
   const handleClick = () => {
      setBoo(!boo)
   }   
 
-
- 
-  
-
   return (
     <>
-      {/* <HashRouter basename={window.location.pathname || ""}> */}
       <HashRouter>
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
@@ -49,7 +42,6 @@ function App() {
           </div>
         </div>
         <Cursor/>
-    {/* </HashRouter> */}
     </HashRouter>
   </>
   );
