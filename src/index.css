@@ -1413,7 +1413,7 @@ label {
     position: absolute;
     top: 10px;
     left: 2%;
-    color: #999;
+    color: black;
     font-size: clamp(14px, 1.5vw, 18px);
     pointer-events: none;
     user-select: none;
@@ -1430,24 +1430,30 @@ textarea {
     font-size: clamp(15px, 1.5vw, 18px);
 }
 
+.form-item input, 
+.form-item textarea{
+    margin-bottom:30px;
+}
+
 input:focus+label,
 input:valid+label,
 textarea:focus+label,
 textarea:valid+label {
-    font-size: clamp(13px, 1.3vw, 16px);
-    color: #777;
+    /* font-size: clamp(13px, 1.3vw, 16px); */
+    font-size: 20px;
+    color: pink;
     top: -20px;
     transition: all .225s ease;
 }
 
 .submit-btn {
     display: inline-block;
-    padding: 6px 30px 6px 30px;
+    padding: 3px 20px 3px 20px;
     font-size: 1.2rem;
     letter-spacing: 3px;
-    border: 1px solid #f065f0;
+    border: 1px solid #f04df0;
     border-radius: 10px;
-    color: #f449f4;
+    color: #761176;
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
     background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #f89bf8)) right;
@@ -1496,4 +1502,22 @@ textarea:valid+label {
 
 .link a{
     color:white;   
+}
+
+
+
+@media only screen and (max-width:600px){
+    .submit-btn{
+        padding:5px;
+        font-size:.8rem;
+        border-radius:5px;
+    }
+}
+
+
+.form-item textarea{
+    max-width:100%;
+    min-width:100%;
+    max-height:300px;
+    min-height:200px;
 }

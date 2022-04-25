@@ -2,12 +2,34 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCodepen } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFlickr } from "@fortawesome/free-brands-svg-icons";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
+
+
+    const form = useRef();
+
+
+
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      emailjs.sendForm('service_gvw12tr', 'template_i01l4k3', form.current, 'FWHFNHaxRHIBNJEQ2')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+    }
+
+
     return ( 
       <div className="about" id="about">
       <div className="typewriter">
@@ -36,7 +58,7 @@ const Contact = () => {
              initial={{x:"-100vw"}}
              animate={{x:0}}
              transition={{delay:1.8, type:"spring", stiffness:120}}>
-              <a href="mailto:zaravelasant@icloud.com" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} size="3x"/></a>
+              <a href="https://www.flickr.com/photos/191063934@N02/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFlickr} size="3x"/></a>
             </motion.div>
 
             <motion.div className="link"
@@ -48,7 +70,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form-wrapper">
-          <form>
+          <form ref={form} onSubmit={handleSubmit}>
             <div className="form-item">
               <input type="text" name="sender" required />
               <label>Name:</label>
@@ -61,7 +83,7 @@ const Contact = () => {
               <textarea className name="message" required defaultValue={""} />
               <label>Message:</label>
             </div>
-            <button className="submit-btn">Send</button>  
+            <button type="submit" className="submit-btn">Send</button>  
           </form>
         </div>
       </div>

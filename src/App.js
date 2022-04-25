@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       {/* <HashRouter basename={window.location.pathname || ""}> */}
-      <Router>
+      <HashRouter>
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
             <button onClick={handleClick} className="nav-toggle" aria-label="toggle-navigation"><span className="hamburger" /></button>
@@ -50,7 +50,7 @@ function App() {
         </div>
         <Cursor/>
     {/* </HashRouter> */}
-    </Router>
+    </HashRouter>
   </>
   );
 }
