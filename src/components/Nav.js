@@ -5,7 +5,7 @@ const Nav = () => {
     <>
       <menu>
         <div className="name">
-          <Link to="/online-portfolio">
+          <Link to="/">
             <div>α</div>
             <div>antonis</div>
             <p>Web Developer</p>
