@@ -27,7 +27,7 @@ const myProjects = [
         infoText: 'A simulation of the known "Shopify',
         technologiesUsed: 'React, Express, MongoDB, NodeJS',
         gitHubLink: 'https://github.com/BensDevDe/easy-store-main',
-        websiteLink: '#',
+        websiteLink: '##',
         category: 'full-stack'
     },
     {
