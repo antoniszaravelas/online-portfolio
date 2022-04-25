@@ -6,9 +6,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  
+
   const [boo,setBoo] = useState(false);
   const handleClick = () => {
      setBoo(!boo)
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <HashRouter>
+        <ScrollToTop>
         <div className={boo? "nav-open": "nothing"}>
           <div className="container">
             <button onClick={handleClick} className="nav-toggle" aria-label="toggle-navigation"><span className="hamburger" /></button>
@@ -42,6 +44,7 @@ function App() {
           </div>
         </div>
         <Cursor/>
+      </ScrollToTop>
     </HashRouter>
   </>
   );
