@@ -1,3 +1,33 @@
+# Online-Portfolio
+
+## Installation
+
+To get the application running simply clone the repository and
+
+```bash
+npm install 
+cd online-portfolio
+npm start
+```
+
+## Dependencies
+
+* emailjs 
+* fontawesome
+* bootstrap
+* framer-motion
+* react
+* react-bootstrap
+* react-dom
+* react-router-dom
+* gh-pages
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,5 +98,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# online-portfolio
-# online-portfolio
