@@ -16,8 +16,8 @@ const myProjects = [
         projectName: 'MERN ECommerce',
         infoText: 'Ecommerce with shopping cart, admin product management, user profile with orders...',
         technologiesUsed: "MERN",
-        gitHubLink: 'https://github.com/antoniszaravelas/techequipper',
-        websiteLink: 'https://techequipper.herokuapp.com/',
+        gitHubLink: 'https://github.com/antoniszaravelas/technologyequipper',
+        websiteLink: 'https://technologyequipper.herokuapp.com/',
         category: 'full-stack'
     },
     {

@@ -32,7 +32,7 @@ function App() {
                 <div className="nav__item"><Link onClick={handleClick} to="/contact" className="nav__link">Contact</Link></div>
               </div>
             </div>
-            
+        
             <Nav/>
 
             <Routes>
